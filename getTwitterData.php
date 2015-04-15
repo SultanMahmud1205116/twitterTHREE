@@ -7,7 +7,7 @@ session_start();
 
 if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empty($_SESSION['oauth_token_secret'])) {
     // We've got everything we need
-    $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET, $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
+    $twitteroauth = new TwitterOAuth("w5TqlKvu2baoRKxZm6xPgUZfs", "Mc1klDqUy380T41HiE3famsxprnul73Eo2k99GtBtmsttbyCVi", $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
 // Let's request the access token
     $access_token = $twitteroauth->getAccessToken($_GET['oauth_verifier']);
 // Save it in a session var

@@ -5,6 +5,8 @@ session_start();
 
 $twitteroauth = new TwitterOAuth("w5TqlKvu2baoRKxZm6xPgUZfs", "Mc1klDqUy380T41HiE3famsxprnul73Eo2k99GtBtmsttbyCVi");
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
+
+// editing this url is left to be done for the last, do not forget
 $request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php');
 
 // Saving them into the session
