@@ -18,6 +18,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
     echo '<pre>';
     print_r($user_info);
     echo '</pre><br/>';
+    
     if (isset($user_info->error)) {
         // Something's wrong, go back to square 1  
         header('Location: login-twitter.php');
