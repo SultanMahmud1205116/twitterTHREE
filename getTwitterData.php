@@ -16,11 +16,12 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
     $user_info = $twitteroauth->get('account/verify_credentials');
 // Print user's info
 
-    //echo '<pre>';
-    //print_r($user_info);
-    $_SESSION['username']=$user_info->name;
-    header("Location: showTimeLine.php");
-    //echo '</pre><br/>';
+    echo '<pre>';
+    print_r($user_info);
+    echo '</pre><br/>';
+    //$_SESSION['username']=$user_info->name;
+    //header("Location: showTimeLine.php");
+    
     
     if (isset($user_info->error)) {
         // Something's wrong, go back to square 1  
