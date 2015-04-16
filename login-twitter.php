@@ -12,7 +12,7 @@ $request_token = $twitteroauth->getRequestToken('http://infinite-escarpment-2472
 
 $_SESSION['oauth_token'] = $request_token['oauth_token'];
 $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
-echo $twitteroauth->http_code."    " ;
+//echo $twitteroauth->http_code."    " ;
 
 // If everything goes well..
 if ($twitteroauth->http_code == 200) {
