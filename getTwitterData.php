@@ -47,4 +47,8 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
     // Something's missing, go back to square 1
     header('Location: login-twitter.php');
 }
+else{
+    echo "damn";
+}
+
 ?>
