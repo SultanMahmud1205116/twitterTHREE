@@ -6,7 +6,7 @@ session_start();
 $twitteroauth = new TwitterOAuth('L09KdlGCBlMsZHM3YucSwuaSw', 'QwYdktWHmxNr5BkvOKYdlE7O2oEYD5HOe5PwIw3q1t0lrXKwHx');
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
 
-$request_token = $twitteroauth->getRequestToken('http://infinite-escarpment-2472.herokuapp.com/getTwitterData.php');
+$request_token = $twitteroauth->getRequestToken('https://infinite-escarpment-2472.herokuapp.com/getTwitterData.php');
 
 // Saving them into the session
 
