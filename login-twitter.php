@@ -3,7 +3,7 @@ require("twitter/twitteroauth.php");
 require 'config/twconfig.php';
 session_start();
 
-$twitteroauth = new TwitterOAuth("w5TqlKvu2baoRKxZm6xPgUZfs", "Mc1klDqUy380T41HiE3famsxprnul73Eo2k99GtBtmsttbyCVi");
+$twitteroauth = new TwitterOAuth("L09KdlGCBlMsZHM3YucSwuaSw", "QwYdktWHmxNr5BkvOKYdlE7O2oEYD5HOe5PwIw3q1t0lrXKwHx");
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
 
 $request_token = $twitteroauth->getRequestToken('https://infinite-escarpment-2472.herokuapp.com/login-twitter.php');
